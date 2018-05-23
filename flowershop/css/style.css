@@ -1,3 +1,82 @@
+
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+	background-color: #ea0eaf;
+    border: 1px solid grey;
+    text-align: left;
+    padding: 8px;
+    color: black;
+}
+
+td {
+    border: 1px solid grey;
+    text-align: center;
+    padding: 8px;
+    color: darkred ;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #fff;
+}
+.buttonI {
+	border-radius: 9px;
+	background-color:#eb1ed6;
+  	border: none;
+  	color: #ffffff;
+  	cursor: pointer;
+  	display: inline-block;
+ 	font-family: 'BenchNine', Arial, sans-serif;
+  	font-size: 1em;
+  	font-size: 12px;
+  	line-height: 1em;
+  	margin: 0px 44px;
+  	outline: none;
+  	padding: 5px 2px 5px;
+ 	position: relative;
+ 	text-transform: uppercase;
+  	font-weight: 500;
+}
+
+.buttonI:before,
+.buttonI:after
+{
+	border-color: transparent;
+  	-webkit-transition: all 0.5s;
+  	transition: all 0.5s;
+  	border-style: solid;
+  	border-width: 0;
+  	content: "";
+  	height: 24px;
+  	position: absolute;
+  	width: 24px;
+}
+
+.buttonI.hover:before,
+.buttonI.hover:before,
+.buttonI.hover:after,
+.buttonI.hover:after 
+{
+  height: 100%;
+  width: 100%;
+}
+
+box
+{
+  background-color: #CCE0FF;
+  border: 1.5px solid violet; 
+  padding: 30px;
+  width: 100%; 
+}
+
+
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
 .search-bar input[type="text"] {
 	width: 100%;
 	padding: 8px 45px 8px 8px;
@@ -6,7 +85,7 @@
 	outline: none;
 	-webkit-appearance: none;
 	color: rgba(0, 0, 0, 0.74);
-	font-size: 0.875em;
+	font-size: 0.874em;
 	font-family: 'Lato', sans-serif;
 	position: relative;
 }

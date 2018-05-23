@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Violetta</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+
+<script src="js/jquery.js"></script> 
+<script src="js/function_buttons.js"></script>
+<script type="text/JavaScript" src="js/main.login.js"></script>
+
+</head>
+<body>
+	<div id="header">
+		<ul>
+			<li><a href="index.html">Acasa</a></li>
+			<li><a href="flowers.html">Produsele noastre</a></li>
+			<li><a href="handling.html">Livrare </a></li>
+			<li><a href="payment.html">Plasarea comenzii</a></li>
+			<li><a href="about.html">Despre noi</a></li>
+			<li><a href="contact.html">Contact</a></li>		
+			<li class="selected"><a href="myaccount.html">Contul meu</a></li>
+		</ul>
+		<div class="col-md-6 header-right"> 
+				<div class="search-bar">
+					<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+					<input type="submit" value="">
+				</div>
+		</div>
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.gif" alt="" /></a>
+		</div>
+	</div>
+  <div id="body">
+	 <div id="main1">
+        <section id="content">    
+        <div id="center">
+                    <h3>Contul meu</h3> 
+          <div class="navbar">
+             <div align="center"><button  class="buttons" onclick="items('login')" >Login</button>
+             <div align="center"><button  class="buttons" onclick="items('creare')" align="right">Creare cont</button>
+          </div>
+        </div>
+      </section> 
+          <div id="login" class="meniu" style="display:none">
+          <br><br>
+            <table width="40%"  border="0" cellpadding="2" align="center" cellspacing="1" >
+              <tbody>
+                <tr>
+                  <td class="box">
+                    <form action="login.php" method="POST" onsubmit="return crypt_pswd();" autocomplete="off">
+                      <div align="center"><strong> Login </strong>
+                      <br>
+                      <br>
+                        <table border="0" cellspacing="0" cellpadding="0">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div align="center">
+                                  Username:
+                                </div>
+                              </td>
+                              <td>
+                                <input id="username" name="username" type="text"  required />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div align="center">
+                                  Parola:
+                                </div>
+                              </td>
+                              <td>
+                                <input name="parola" id="parola" type="password" required />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <br>
+                        <div>
+                          <input class="buttonI" type="submit" href="#" class="submitbutton">
+                        </div> 
+                      </div>
+                    </form>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <div id="creare" class="meniu" style="display:none">
+          <br><br>  <center>  
+            
+            <form id=payment action="" method="post">
+    <fieldset>
+       <legend>Detalii despre cont</legend>
+     <ul style="list-style: none;">
+            <li><br>
+                <label for=name>Nume:&nbsp; &nbsp&nbsp</label>
+ 
+                <input id=name name=name type=text placeholder="Nume si prenume" required autofocus />
+            </li><br>
+            <li>
+                <label for=email>Email:&nbsp; &nbsp&nbsp</label>
+                <input id=email name=email type=email placeholder="example@domeniu.com" required />
+            </li><br>
+            <li>
+                <label for=phone>Telefon: &nbsp </label>
+                <input id=phone name=phone type="int" maxlength="10" placeholder="Numarul de telefon" required />
+            </li>
+      <li><br>
+                <label for=username>Username:</label>
+ 
+                <input id=username name=username type=text placeholder="Nume de utilizator" required autofocus />
+            </li>
+      <li><br>
+                <label for=password>Parola:&nbsp; &nbsp&nbsp</label>
+                <input id=password name=password type=text placeholder="Parola" required autofocus />
+            </li><br>
+       </ul>
+    </fieldset>
+    <fieldset>
+<center>
+   <button class="buttonI" type=submit onclick="save();";>Inregistrare</button>
+
+    </fieldset>
+</body>
+</html>
